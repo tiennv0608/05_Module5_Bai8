@@ -7,6 +7,7 @@ import {ImageGalleryComponent} from './image-gallery/image-gallery.component';
 import {ImageCardComponent} from './image-gallery/image-card/image-card.component';
 import {ImageGalleryModule} from './image-gallery/image-gallery.module';
 import {GalleryConfig} from './image-gallery/token';
+import {ImgSliderModule} from './img-slider/img-slider.module';
 
 @NgModule({
   declarations: [
@@ -15,10 +16,11 @@ import {GalleryConfig} from './image-gallery/token';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ImageGalleryModule
+    ImageGalleryModule,
+    ImgSliderModule
   ],
   providers: [
-    {provide: GalleryConfig, useValue: 3}
+    {provide: GalleryConfig, useValue: 2}
   ],
   bootstrap: [AppComponent]
 })

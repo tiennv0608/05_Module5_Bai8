@@ -1,0 +1,12 @@
+<div class="slider-container">
+  <div class="slider-item" [style.max-width.%]="itemWidth" [style.flex-basis.%]="itemWidth">
+    <app-img-slide [src]="currentImg"></app-img-slide>
+  </div>
+</div>
+
+<i class="arrow arrow-prev">
+  <button class="btn btn-primary" (click)="previous()" style="width: 100px">Previous</button>
+</i>
+<i class="arrow arrow-next">
+  <button class=" btn btn-success" (click)="next()" style="width: 100px">Next</button>
+</i>
